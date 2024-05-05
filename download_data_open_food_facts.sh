@@ -16,9 +16,3 @@ mongodb-database-tools-ubuntu2204-x86_64-100.9.4/bin/mongorestore $CONNECTION_ST
 curl -o openfoodfacts-products.jsonl.gz https://static.openfoodfacts.org/data/openfoodfacts-products.jsonl.gz
 
 gzip -d openfoodfacts-products.jsonl.gz
-
-# copie sur le s3 du datalab des fichiers csv et parquet contenant les données d'intérêt extraites à partir du jsonl
-
-mc cp "/home/onyxia/work/data_interet.csv" s3/auredisanto/open-food-facts-analysis/data_interet.csv
-
-mc cp "/home/onyxia/work/data_interet.parquet" s3/auredisanto/open-food-facts-analysis/data_interet.parquet
